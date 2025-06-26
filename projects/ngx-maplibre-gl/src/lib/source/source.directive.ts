@@ -24,9 +24,9 @@ export class SourceDirective implements OnInit, OnDestroy {
   private readonly destroyRef = inject(DestroyRef);
 
   /**  Init input */
-  public readonly id = input.required<string>();
+  public id = input.required<string>();
 
-  /** 
+  /**
    * @internal
    * Used to store the current source id and make sure removeSource is only called once.
    */

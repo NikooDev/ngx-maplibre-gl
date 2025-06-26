@@ -76,7 +76,7 @@ export class PopupComponent implements OnChanges, OnInit, OnDestroy {
    * Dynamic input [ngx]
    * Mutually exclusive with `lngLat`
    */
-  readonly feature = input<GeoJSON.Feature<GeoJSON.Point>>();
+  public feature = input<GeoJSON.Feature<GeoJSON.Point>>();
 
   /** Dynamic input */
   readonly lngLat = input<LngLatLike>();

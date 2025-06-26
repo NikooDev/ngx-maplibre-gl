@@ -58,7 +58,7 @@ export class LayerComponent
   private readonly mapService = inject(MapService);
 
   /** Init input */
-  readonly id = input.required<LayerSpecification['id']>();
+  public id = input.required<LayerSpecification['id']>();
   readonly type = input.required<LayerSpecification['type']>();
   readonly source = input<string>();
   readonly metadata = input<LayerSpecification['metadata']>();

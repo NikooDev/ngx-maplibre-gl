@@ -1,6 +1,6 @@
 {
   "name": "ngx-maplibre-gl-srcs",
-  "version": "20.0.1",
+  "version": "20.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/maplibre/ngx-maplibre-gl.git"
@@ -20,7 +20,12 @@
     "serve:ssr:showcase": "node dist/showcase/server/server.mjs",
     "changelog": "auto-changelog --unreleased-only"
   },
-  "private": true,
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md"
+  ],
+  "private": false,
   "engines": {
     "node": ">=18.12.0"
   },
